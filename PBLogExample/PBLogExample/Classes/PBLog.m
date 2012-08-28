@@ -29,6 +29,7 @@
 
 #import "PBLog.h"
 
+#error specify your debug URL here
 NSString *kURLString = @"place_your_url_here";
 NSString *kContentType = @"application/x-www-form-urlencoded";
 NSString *kHTTPMethod = @"POST";
