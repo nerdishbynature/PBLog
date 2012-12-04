@@ -54,8 +54,11 @@ NSString *kHTTPMethod = @"POST";
                                           length:strlen(file)
                                         encoding:NSUTF8StringEncoding];
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyy-MM-dd hh:mm:ss"];
+    
     logString = [NSString stringWithFormat:@"[%@] %s[%d]: %@",
-                 [NSDate date],
+                 [formatter stringFromDate:[NSDate date]],
                  [[sourceFile lastPathComponent] UTF8String],
                  lineNumber,
                  formattedString];
@@ -66,6 +69,7 @@ NSString *kHTTPMethod = @"POST";
         [self sendLog:logString];
     }
     
+    [formatter release];
     [formattedString release];
     [sourceFile release];
 }
