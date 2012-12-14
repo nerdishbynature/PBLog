@@ -16,6 +16,8 @@
 		232EA5D515ED1F66009F09B6 /* PBLogExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232EA5D315ED1F66009F09B6 /* PBLogExampleViewController.m */; };
 		232EA5D615ED1F66009F09B6 /* PBLogExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232EA5D415ED1F66009F09B6 /* PBLogExampleViewController.xib */; };
 		232EA5DD15ED2BB9009F09B6 /* PBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 232EA5DC15ED2BB9009F09B6 /* PBLog.m */; };
+		23CDF01F167B7EE300B24B89 /* PBFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CDF01E167B7EE300B24B89 /* PBFileLogger.m */; };
+		23CDF022167B7F3E00B24B89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CDF021167B7F3E00B24B89 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		232EA5D415ED1F66009F09B6 /* PBLogExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBLogExampleViewController.xib; sourceTree = "<group>"; };
 		232EA5DB15ED2BB9009F09B6 /* PBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLog.h; sourceTree = "<group>"; };
 		232EA5DC15ED2BB9009F09B6 /* PBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBLog.m; sourceTree = "<group>"; };
+		23CDF01D167B7EE300B24B89 /* PBFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFileLogger.h; sourceTree = "<group>"; };
+		23CDF01E167B7EE300B24B89 /* PBFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFileLogger.m; sourceTree = "<group>"; };
+		23CDF021167B7F3E00B24B89 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		232EA5AC15ED1F48009F09B6 = {
 			isa = PBXGroup;
 			children = (
+				23CDF021167B7F3E00B24B89 /* Default-568h@2x.png */,
 				232EA5C115ED1F48009F09B6 /* PBLogExample */,
 				232EA5BA15ED1F48009F09B6 /* Frameworks */,
 				232EA5B815ED1F48009F09B6 /* Products */,
@@ -105,6 +111,8 @@
 		232EA5D715ED2A13009F09B6 /* PBLog */ = {
 			isa = PBXGroup;
 			children = (
+				23CDF01D167B7EE300B24B89 /* PBFileLogger.h */,
+				23CDF01E167B7EE300B24B89 /* PBFileLogger.m */,
 				232EA5DB15ED2BB9009F09B6 /* PBLog.h */,
 				232EA5DC15ED2BB9009F09B6 /* PBLog.m */,
 			);
@@ -166,6 +174,7 @@
 			files = (
 				232EA5C615ED1F48009F09B6 /* InfoPlist.strings in Resources */,
 				232EA5D615ED1F66009F09B6 /* PBLogExampleViewController.xib in Resources */,
+				23CDF022167B7F3E00B24B89 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 				232EA5CC15ED1F48009F09B6 /* PBAppDelegate.m in Sources */,
 				232EA5D515ED1F66009F09B6 /* PBLogExampleViewController.m in Sources */,
 				232EA5DD15ED2BB9009F09B6 /* PBLog.m in Sources */,
+				23CDF01F167B7EE300B24B89 /* PBFileLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

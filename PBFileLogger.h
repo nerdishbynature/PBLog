@@ -26,37 +26,29 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
-/*
- PBLog is an NSLog() alternative and was created for being able to log events in an non-debug build state (e.g. AdHoc).
- Please consider README to get further setup instructions.
- Feel free to follow me on Twitter @piet_nbn .
- */
-
-//This code was inspired by http://www.borkware.com/rants/agentm/mlog/
+// @see http://cocoaforbreakfast.wordpress.com/2011/02/25/logging-into-files-for-ios/ 
 
 #import <Foundation/Foundation.h>
-#import "PBFileLogger.h"
+#define PBFileLog(fmt, ...) [[PBFileLogger sharedInstance] log:fmt, ##__VA_ARGS__]
 
-#define PBLog(s,...) [PBLog logFile:__FILE__ withLineNumber:__LINE__ andFormat:(s), ##__VA_ARGS__]
-#define SEND_OVER_HTTP NO
-#define LOG_TO_FILE YES
-
-
-extern NSString *kURLString;
-extern NSString *kContentType;
-extern NSString *kHTTPMethod;
-
-@interface PBLog : NSObject
-
+@interface PBFileLogger : NSObject{
+    
+    NSFileHandle *logFile;
+    
+}
 
 /**
- Method used for logging
- @param file The class from which the log comes
- @param lineNumber The line number where the log was sent from
- @param format, ... The formatted string, which should be logged
+ Is the sharedInstance singleton for loggin into the same file
  */
-+ (void)logFile:(char*)file
-   withLineNumber:(int)lineNumber
-       andFormat:(NSString*)format, ...;
++ (PBFileLogger *)sharedInstance;
+
+/**
+ Method used for loggin
+ @param format, ... The formatted string supposed to be logged
+ */
+- (void)log:(NSString *)format, ...;
+
 @end
+
+
+
