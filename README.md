@@ -16,51 +16,44 @@ Or use the webserver I provided.
             
 Feel free to ask any questions and follow me on Twitter [@piet_nbn](https://www.twitter.com/piet_nbn).
 
-#Usage#
-logFile:withLineNumber:andFormat:
+#Documentation#
 
-Method used for logging
+*logFile:withLineNumber:andFormat:*
 
-+ (void)logFile:(char *)file withLineNumber:(int)lineNumber andFormat:(NSString *)format, ...
+            Method used for logging
+
+*+ (void)logFile:(char *)file withLineNumber:(int)lineNumber andFormat:(NSString *)format, ...*
+
 Parameters
-file
-The class from which the log comes
 
-lineNumber
-The line number where the log was sent from
+*file*
 
-format,
-… The formatted string, which should be logged
+            The class from which the log comes
 
-Discussion
-Method used for logging
+*lineNumber*
 
-Declared In
-PBLog.h
+            The line number where the log was sent from
 
-sharedInstance
+*format, …*
 
-Is the sharedInstance singleton for loggin into the same file
+            The formatted string, which should be logged
 
-+ (PBFileLogger *)sharedInstance
-Discussion
-Is the sharedInstance singleton for loggin into the same file
+*sharedInstance*
 
-Declared In
-PBFileLogger.h
+            Is the sharedInstance singleton for loggin into the same file
+
+*+ (PBFileLogger *)sharedInstance*
+
 Instance Methods
 
-log:
+*log:*
 
-Method used for loggin
+            Method used for loggin
 
-- (void)log:(NSString *)format, ...
-Parameters
-format,
-… The formatted string supposed to be logged
+*- (void)log:(NSString *)format, ...*
 
-Discussion
-Method used for loggin
+            Parameters
 
-Declared In
-PBFileLogger.h
+*format, …*
+
+            The formatted string supposed to be logged
