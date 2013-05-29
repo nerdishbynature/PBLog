@@ -16,6 +16,14 @@ Or use the webserver I provided.
             
 Feel free to ask any questions and follow me on Twitter [@piet_nbn](https://www.twitter.com/piet_nbn).
 
+#Installation#
+
+Install via cocoapods:
+
+    pod 'PBLog', '~> 0.1'
+    
+Or simply drop PBLog.* and PBFileLogger.* files into your Project.
+
 #Documentation#
 
 *logFile:withLineNumber:andFormat:*
