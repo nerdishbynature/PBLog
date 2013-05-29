@@ -40,7 +40,7 @@
 
 #define PBLog(s,...) [PBLog logFile:__FILE__ withLineNumber:__LINE__ andFormat:(s), ##__VA_ARGS__]
 #define SEND_OVER_HTTP NO
-#define LOG_TO_FILE YES
+#define LOG_TO_FILE NO
 
 
 extern NSString *kURLString;
